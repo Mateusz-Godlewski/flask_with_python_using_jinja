@@ -1,0 +1,37 @@
+body {
+    background-color: #4b778d;
+    color: #181818;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+div {
+    background-color: #d2e69c;
+    margin: 0px 200px 0px 200px;
+}
+
+h1 {
+    font-weight: normal;
+}
+h2 {
+    padding-bottom: 150px;
+    font-weight: normal;
+}
+
+a {
+    color: #8fd9a8;
+}
+
+a:visited {
+    color: #8fd9a8;
+}
+
+a:hover {
+    color: #28b5b5;
+}
+
+p {
+    font-size: 3rem;
+}

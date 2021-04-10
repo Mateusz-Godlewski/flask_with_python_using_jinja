@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- https://colorhunt.co/palette/273394 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog practice</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Welcome to the blog website!</h1>
+        <h2>Below You can find multiple blogposts, each being renderd from a template using jinja.</h2>
+    </div>
+    <hr>
+    {% for post in blog_data: %}
+        <a href="{{ url_for('blog', num=post['id']) }}">{{ post["title"] }}</a><br>
+        {{ post["subtitle"] }}
+        <hr>
+    {% endfor %}
+</body>
+</html>
